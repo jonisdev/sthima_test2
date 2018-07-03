@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STHIMA's ToDo App</title>
+  <link rel="stylesheet" href="static/css/bumla.css">
+  <link rel="stylesheet" href="static/css/bulma-radio-checkbox.css">
+  <!-- <link rel="stylesheet" href="static/css/debug.css"> -->
+</head>
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container is-fluid">
+      <div class="navbar-brand">
+        <a href="#" class="navbar-item">
+          <span class="icon is-large has-text-warning">
+            <i class="far fa-list-alt fa-2x"></i>
+          </span>
+          <div id='abc'>STHIMA's <br> ToDo List</div>
+        </a>
+        <div class="navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item">Home</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">About</a>
+            <div class="navbar-dropdown">
+              <a href="https://github.com/jonatanvianna" class="navbar-item">
+               <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <div>github</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="#" class="navbar-link">
+            <span class="icon has-text-warning">
+              <i class="fas fa-user"></i>
+            </span>
+            <strong>Anonynous</strong>
+          </a>
+          <div class="navbar-dropdown">
+            <a href="#" class="navbar-item">Admin</a>
+            <hr class="navbar-divider">
+            <a href="#" class="navbar-item">Profile</a>
+            <hr class="navbar-divider">
+            <a href="" class="navbar-item">Logout</a>
+          </div>
+        </div>
+        <a href="" class="navbar-item"><strong>Login</strong></a>
+        <a href="" class="navbar-item">Signup</a>
+        <a href="" class="navbar-item">Reset Password</a>
+      </div>
+    </div>
+  </div>
+</nav><!-- End NAV -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">
+            My Todo Lists
+          </p>
+          <div>
+            <ul id="ul-list-todos" class="menu-list">
+             <li id='add-todolist'>
+              <a href="#">
+                <form class="form">
+                  <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-small" type="text" placeholder="Add ToDo List">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-check-square"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="menu-label">
+          Administration
+        </p>
+        <ul class="menu-list">
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-cog"></i>
+              </span>
+              Edit my account
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-lock"></i>
+              </span>
+              Edit my password
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="column is-6 ">
+      <p id="todo-title" class="title is-4"><< Select a TODO List</p>
+      <ul id="sortable">
+        <!-- <div class="field">
+          <i class="fas fa-ellipsis-v has-text-grey-light"></i>
+          <i class="fas fa-ellipsis-v has-text-grey-light"></i>   
+          <input class="is-checkradio" id="ex1" type="checkbox" name="ex1">
+          <label for="ex1">Check me</label>
+        </div>
+        <div class="is-divider" data-content="||"></div>
+        <div class="field">
+          <i class="fas fa-ellipsis-v has-text-grey-light"></i>
+          <i class="fas fa-ellipsis-v has-text-grey-light"></i>   
+          <input class="is-checkradio" id="ex2" type="checkbox" name="ex2" checked="checked">
+          <label for="ex2">Check me</label>
+        </div> -->
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer class="footer">
+ <div class="container is-fluid">
+  <div class="content has-text-centered">
+   <p class="has-text-dark">
+    STHIMA'S ToDo List
+  </p>
+</div>
+</div>
+</footer>
+
+
+<script src="static/js/fontawesome_all.js"></script>
+<script src="static/js/jquery-3.3.1.js"></script>
+<script src="static/js/jquery-ui.js"></script>
+<script src="static/js/jquery.ui.touch-punch.min.js"></script>
+<script src="static/js/app.js"></script>
+</body>
+
+</html>
